@@ -1,0 +1,256 @@
+.title_top {
+  position: relative;
+  margin-top: 80px;
+  width: 100%;
+  height: 80%;
+}
+
+.title_top_bg {
+  height: 14vw;
+}
+
+.title_top_bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title_top h1 {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.title_top::before {
+  content: '';
+  background-image: url("../common/img/top_red_triangle.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: -40px;
+}
+
+.title_bottom {
+  text-align: center;
+  height: 6vw;
+  margin-top: 15px;
+}
+
+.title_bottom h2 {
+  margin-top: 15px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.mean {
+  position: relative;
+  background-color: #fff;
+}
+
+.mean_title {
+  color: #bc001c;
+  font-size: 46px;
+  font-weight: 700;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.mean_text {
+  width: 48%;
+  margin: 15px auto 0;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.mean::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url("https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/guardian/bg_top01.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mean::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url("https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/guardian/bg_top02.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btns_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.btns_list .item {
+  position: relative;
+  width: calc(100% /3 - 1.6%);
+  height: 420px;
+  margin: 0 24px 45px 0;
+}
+
+.btns_list .item:nth-child(3) {
+  margin: 0 0 45px 0;
+}
+
+.btns_list .photo img {
+  width: 100%;
+}
+
+.btns_list .text {
+  font-size: 16px;
+}
+
+.btns_list .text span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.btns_list .more {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.btns_list .more .more-btn {
+  display: inline;
+  background-color: #bc001c;
+}
+
+.btns_list .more .more-btn:hover {
+  background-color: #bc001c;
+}
+
+.btns_list .more .more-text {
+  display: inline-block;
+}
+
+.btns_list .more .more-arrow {
+  top: -14px;
+  right: -45px;
+}
+
+.join {
+  background-color: #fff;
+  position: relative;
+}
+
+.join_contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 150px 0 80px;
+}
+
+.join_contents_left {
+  width: 47%;
+  z-index: 1;
+}
+
+.join_contents_left img {
+  width: 100%;
+}
+
+.join_contents_right {
+  width: 48%;
+}
+
+.join_contents_right_title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #bc001c;
+}
+
+.join_contents_right_text {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 45px;
+}
+
+.join #join_top_bgtriangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.join #join_top_bgtriangle .bgtriangle_line-red:nth-child(1)::before {
+  right: 53%;
+  top: -0.9%;
+}
+
+.join #join_top_bgtriangle .bgtriangle_line-red:nth-child(1)::after {
+  right: 53%;
+  bottom: -0.8%;
+}
+
+.join #join_top_bgtriangle .bgtriangle_line-red:nth-child(2)::before {
+  right: 33%;
+  top: -0.9%;
+}
+
+.join #join_top_bgtriangle .bgtriangle_line-red:nth-child(2)::after {
+  right: 33%;
+  bottom: -0.8%;
+}
+
+.join #join_top_bgtriangle .bgtriangle_line-red:nth-child(3)::before {
+  right: 13%;
+  top: -0.9%;
+}
+
+.join #join_top_bgtriangle .bgtriangle_line-red:nth-child(3)::after {
+  right: 13%;
+  bottom: -0.8%;
+}
+
+.contact {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.contact_title {
+  font-size: 34px;
+  color: #fff;
+}
+
+.contact_text {
+  font-size: 16px;
+  margin: 10px 0 40px;
+}
+/*# sourceMappingURL=style.css.map */

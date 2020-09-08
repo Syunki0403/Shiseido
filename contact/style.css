@@ -1,0 +1,305 @@
+.title_top {
+  position: relative;
+  margin-top: 80px;
+  width: 100%;
+  height: 80%;
+}
+
+.title_top_bg {
+  height: 14vw;
+}
+
+.title_top_bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title_top h1 {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.title_top::before {
+  content: "";
+  background-image: url("../common/img/top_red_triangle.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: -40px;
+}
+
+.title_bottom {
+  text-align: center;
+  height: 6vw;
+  margin-top: 15px;
+}
+
+.title_bottom h2 {
+  margin-top: 15px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.contact {
+  padding: 40px 0 60px;
+}
+
+.contact_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact .item {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+.contact .title {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.contact .mail-addr {
+  font-size: 18px;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.contact .text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.contact .phone-num {
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.contact .item:nth-child(3) .phone-num {
+  margin-top: 35px;
+}
+
+.recruitment {
+  background-color: #fff;
+  padding: 60px 0;
+  position: relative;
+}
+
+.recruitment_contents {
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.recruitment .title {
+  color: #bc001c;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.recruitment .text {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.recruitment .destination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d9d9d9;
+  margin: 20px 0 30px;
+}
+
+.recruitment .destination_left {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 25px 100px;
+}
+
+.recruitment .destination_left::after {
+  display: inline-block;
+  content: "";
+  width: 3px;
+  height: 70%;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.recruitment .destination_right {
+  font-size: 16px;
+  padding: 25px 0;
+  margin: 0 auto;
+}
+
+.recruitment .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recruitment .btns_item {
+  text-align: end;
+}
+
+.recruitment .btns_item_content {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  padding: 15px 130px 15px 105px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.recruitment .btns_item_content::after {
+  content: "";
+  display: inline-block;
+  background-image: url("../common/img/icon_pdf.png");
+  background-repeat: no-repeat;
+  width: 39px;
+  height: 53px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 40px;
+}
+
+.recruitment .btns_item_example {
+  color: #000;
+  text-decoration: underline;
+}
+
+.recruitment #recruitment_bgtriangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.recruitment #recruitment_bgtriangle .bgtriangle_line-red:nth-child(1)::before {
+  bottom: -12.8%;
+}
+
+.recruitment #recruitment_bgtriangle .bgtriangle_line-red:nth-child(1)::after {
+  top: -12.8%;
+}
+
+.recruitment #recruitment_bgtriangle .bgtriangle_line-red:nth-child(2)::before {
+  bottom: -12.8%;
+  right: -60%;
+}
+
+.recruitment #recruitment_bgtriangle .bgtriangle_line-red:nth-child(2)::after {
+  top: -12.8%;
+  right: -60%;
+}
+
+.recruitment #recruitment_bgtriangle .bgtriangle_line-red:nth-child(3)::before {
+  bottom: -12.8%;
+  right: -90%;
+}
+
+.recruitment #recruitment_bgtriangle .bgtriangle_line-red:nth-child(3)::after {
+  top: -12.8%;
+  right: -90%;
+}
+
+.access {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.access_map {
+  width: 100%;
+  max-width: 1000px;
+  height: 50vw;
+  max-height: 600px;
+  margin: 20px 0 40px;
+}
+
+.access_route {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.access_route_right {
+  color: #fff;
+  margin-left: 30px;
+}
+
+.access_route_right .logo {
+  width: 80%;
+}
+
+.access_route_right .logo img {
+  width: 100%;
+}
+
+.access_route_right .address {
+  font-size: 16px;
+  margin: 10px 0 20px;
+}
+
+.access_route_right .station {
+  margin-bottom: 25px;
+}
+
+.access_route_right .station span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.access_route_right .station p {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+.access_route_right .station p::before {
+  display: inline-block;
+  position: absolute;
+  left: 7px;
+  top: 13px;
+  content: "";
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

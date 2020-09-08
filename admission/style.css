@@ -1,0 +1,440 @@
+.title {
+  padding-bottom: 10px;
+}
+
+.title_top {
+  position: relative;
+  margin-top: 80px;
+  width: 100%;
+  height: 80%;
+}
+
+.title_top_bg {
+  height: 14vw;
+}
+
+.title_top_bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title_top h1 {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.title_top::before {
+  content: "";
+  background-image: url("../common/img/top_red_triangle.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: -40px;
+}
+
+.title_bottom {
+  height: 6vw;
+  margin-top: 15px;
+}
+
+.title_bottom h2 {
+  margin-top: 15px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+}
+
+.contents {
+  background-color: #fff;
+  position: relative;
+}
+
+.contents .payment {
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 80px;
+  z-index: 1;
+}
+
+.contents .payment_box {
+  margin-bottom: 70px;
+}
+
+.contents .payment_box_title {
+  color: #bc001c;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.contents .payment_box_text {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-top: 10px;
+}
+
+.contents #contents_bgtriangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.contents #contents_bgtriangle .bgtriangle_line-red:nth-child(1)::before {
+  left: 10%;
+  bottom: 23.9%;
+}
+
+.contents #contents_bgtriangle .bgtriangle_line-red:nth-child(1)::after {
+  left: 10%;
+  top: 23.9%;
+}
+
+.contents #contents_bgtriangle .bgtriangle_line-red:nth-child(2)::before {
+  left: 35%;
+  bottom: 23.9%;
+}
+
+.contents #contents_bgtriangle .bgtriangle_line-red:nth-child(2)::after {
+  left: 35%;
+  top: 23.9%;
+}
+
+.contents #contents_bgtriangle .bgtriangle_line-red:nth-child(3)::before {
+  left: 60%;
+  bottom: 23.9%;
+}
+
+.contents #contents_bgtriangle .bgtriangle_line-red:nth-child(3)::after {
+  left: 60%;
+  top: 23.9%;
+}
+
+.payment_procedure_selectbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+
+.payment_procedure_selectbox .input-birthday {
+  width: 71%;
+  font-size: 22px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.payment_procedure_selectbox .select-btn {
+  width: 24%;
+  max-width: 155px;
+  max-height: 60px;
+  cursor: pointer;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.payment_procedure_selectbox .select-btn::after {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: 1.5px solid;
+  border-color: transparent transparent #000 #000;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.payment_procedure_selectbox .label {
+  position: absolute;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  z-index: 1;
+}
+
+.payment_procedure_selectbox select {
+  position: relative;
+  opacity: 0;
+  display: block;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 8px 0;
+  z-index: 2;
+}
+
+.payment_procedure_selectbox select:focus {
+  opacity: 1;
+  z-index: -1;
+}
+
+.payment_procedure_selectbox .btn {
+  background-color: #bc001c;
+  color: #fff;
+  width: 25%;
+  max-width: 185px;
+  max-height: 60px;
+  padding: 1% 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.payment_procedure_selectbox .show-birthday {
+  position: relative;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d9d9d9;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0 4%;
+}
+
+.payment_procedure_selectbox .show-birthday::before {
+  position: absolute;
+  left: -9%;
+  content: "";
+  border-top: 10px solid transparent;
+  border-right: 20px solid #d9d9d9;
+  border-bottom: 10px solid transparent;
+}
+
+.payment_procedure_courselist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.payment_procedure_courselist .item {
+  width: 47%;
+}
+
+.payment_procedure_courselist label {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  padding: 5%;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.payment_procedure_courselist .course {
+  font-size: 22px;
+  font-weight: 700;
+  color: #bc001c;
+}
+
+.payment_procedure_courselist .pay {
+  color: #fff;
+  font-size: 18px;
+  margin-left: auto;
+  padding-right: 50px;
+}
+
+.payment_procedure_courselist .arrow {
+  right: 35px;
+  bottom: 20px;
+  width: 5%;
+}
+
+.payment_procedure_courselist .arrow img {
+  width: 100%;
+}
+
+.payment_procedure_courselist .arrow::before {
+  width: 25px;
+  height: 2px;
+}
+
+.payment_procedure_courselist .item:hover .arrow {
+  -webkit-transform: translateX(110%);
+          transform: translateX(110%);
+}
+
+.payment_procedure_courselist .item:hover .arrow::before {
+  background-color: #dfdfdf;
+}
+
+.payment_how_reference {
+  font-size: 12px;
+  color: #bc001c;
+  margin: 20px 0;
+}
+
+.payment_how_reference a {
+  color: #0020ce;
+  text-decoration: underline;
+  padding-left: 15px;
+}
+
+.payment_how_convenience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+}
+
+.payment_pc_img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.payment_phone_img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.payment_attention_list {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.payment_attention_list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.payment_attention_list li::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.payment_attention_supplement {
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.payment_attention_supplement span {
+  color: #bc001c;
+}
+
+.payment_convenience-store {
+  margin-top: 70px;
+  padding-bottom: 70px;
+}
+
+.payment_convenience-store .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 3px solid #000;
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+
+.payment_convenience-store .convenience-store {
+  width: 298px;
+  text-align: center;
+}
+
+.payment_convenience-store .convenience-store-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 298px;
+}
+
+.payment_convenience-store .convenience-store-list li {
+  -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+}
+
+.payment_convenience-store .convenience-store-list img {
+  width: 100%;
+}
+
+.payment_convenience-store .text {
+  font-size: 16px;
+  width: 576px;
+}
+
+.payment_convenience-store .text span {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.payment_convenience-store .item:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.payment_convenience-store .item:nth-child(3) img {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.foot_top {
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

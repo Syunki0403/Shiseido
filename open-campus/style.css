@@ -1,0 +1,275 @@
+header {
+  background-color: #000;
+}
+
+header .header_contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 80px;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+header .header_contents_logo {
+  display: inline-block;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+header .header_contents_logo img {
+  width: 100%;
+}
+
+header .header_contents_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header_contents_btn li {
+  margin-left: 20px;
+}
+
+header .header_contents_btn a {
+  background-color: #fff;
+  color: #000;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 7px 40px;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .header_contents_btn a:hover {
+  color: #fff;
+  background-color: #bc001c;
+}
+
+main {
+  margin-top: 80px;
+}
+
+main .top-image {
+  content: "";
+  background-image: url("https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/opencampus/pic_mainkv01.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 45.4vw;
+}
+
+.experience {
+  background-color: #fff;
+  padding: 60px 0 200px;
+}
+
+.experience_contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.experience_contents .text {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.9;
+  margin-top: 30px;
+}
+
+.experience_contents .text span {
+  font-size: 30px;
+  font-weight: 700;
+  color: #bc001c;
+}
+
+.experience_contents .phone {
+  position: relative;
+  font-size: 20px;
+  color: #bc001c;
+}
+
+.experience_contents .phone span {
+  font-size: 38px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.experience_contents .phone::before {
+  content: "";
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: #bc001c;
+  position: absolute;
+  top: 55%;
+  left: -50px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url("../common/img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 5px;
+}
+
+.experience_contents .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+  width: 30%;
+}
+
+.experience_contents .circle li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  border-radius: 50%;
+  border: solid 3px #bc001c;
+  font-size: 21px;
+  color: #bc001c;
+  font-weight: 700;
+}
+
+.experience_contents .circle span {
+  font-size: 13px;
+}
+
+.experience_contents .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 63vw;
+  margin-top: 40px;
+}
+
+.experience_contents .btn a {
+  display: inline-block;
+  background-color: #bc001c;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  width: 31vw;
+  border-radius: 50px;
+  text-align: center;
+  padding: 30px 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.experience_contents .btn a:hover {
+  background-color: #000;
+}
+
+.document {
+  margin-top: 120px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../common/img/open-campus_triangle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.document .title {
+  margin-top: -50px;
+}
+
+.document .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  margin-bottom: 50px;
+}
+
+.document .photo {
+  width: 45%;
+}
+
+.document .photo img {
+  width: 100%;
+}
+
+.document .text {
+  font-size: 24px;
+  width: 530px;
+}
+
+.document .text a {
+  display: inline-block;
+  background-color: #bc001c;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 1.2vw 0;
+  border-radius: 50px;
+  margin-top: 40px;
+  margin-left: 30px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 30vw;
+}
+
+.document .text a:hover {
+  background-color: #000;
+}
+
+footer {
+  background-color: #000;
+}
+
+footer p {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 40px 0;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../common/js/script.js"></script>
+    <script src="../common/js/scroll.js"></script>
+    <title>年間スケジュール｜資生堂美容技術専門学校</title>
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="../common/css/template.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_bkcolor">
+            <div class="head">
+                <div class="head_logo">
+                    <a href="../index.html"></a>
+                </div>
+                <nav class="head_nav">
+                    <div class="head_nav_top">
+                        <div class="head_nav_top_item">
+                            <a href="../parents/index.html">保護者の方へ</a>
+                        </div>
+                        <div class="head_nav_top_item">
+                            <a href="../open-campus/index.html">オープンキャンパス</a>
+                        </div>
+                        <div class="head_nav_top_item">
+                            <a href="">資料請求</a>
+                        </div>
+                        <div class="head_nav_top_item">
+                            <a href="../contact/index.html">企業の方へ</a>
+                        </div>
+                        <div class="head_nav_top_item">
+                            <a href="../admission/index.html">入学選考料のお支払い</a>
+                        </div>
+                    </div>
+                    <ul class="head_nav_bottom">
+                        <li class="head_nav_bottom_list js-nav_bottom_list" date-list="1">
+                            <a href="../summary/index.html">学校について</a>
+                        </li>
+                        <li class="head_nav_bottom_list js-nav_bottom_list" date-list="2">
+                            <a href="">学科・コース</a>
+                        </li>
+                        <li class="head_nav_bottom_list js-nav_bottom_list" date-list="3">
+                            <a href="../schedule/index.html">キャンパスライフ</a>
+                        </li>
+                        <li class="head_nav_bottom_list js-nav_bottom_list" date-list="4">
+                            <a href="../magazine/index.html">シセビマガジン</a>
+                        </li>
+                        <li class="head_nav_bottom_list js-nav_bottom_list" date-list="5">
+                            <a href="../offering/index.html">入学案内</a>
+                        </li>
+                        <li class="head_nav_bottom_list js-nav_bottom_list" date-list="6">
+                            <a href="../employment/index.html">進路・就活支援</a>
+                        </li>
+                        <li class="head_nav_bottom_list">
+                            <a href="../question/index.html">よくある質問</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="hide-nav">
+            <ul class="hide-nav_contents js-hide-nav_contents-1">
+                <li class="hide-nav_contents_list">
+                    <a href="">学校概要</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">シセビだからできること</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">施設・設備</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">学校の周辺環境</a>
+                </li>
+            </ul>
+            <ul class="hide-nav_contents js-hide-nav_contents-2">
+                <li class="hide-nav_contents_list">
+                    <a href="">美容師科ヘアスタイリストコース</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">美容師科ビューティースペシャリストコース</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">ビューティーコンサルタント科</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">美容師通信科</a>
+                </li>
+            </ul>
+            <ul class="hide-nav_contents js-hide-nav_contents-3">
+                <li class="hide-nav_contents_list">
+                    <a href="">年間スケジュール</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">オープンキャンパス</a>
+                </li>
+            </ul>
+            <ul class="hide-nav_contents js-hide-nav_contents-4">
+                <li class="hide-nav_contents_list">
+                    <a href="">学生生活</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">イベントレポート</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">コンテスト実績</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">卒業生メッセージ</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">美容お役立ち情報</a>
+                </li>
+            </ul>
+            <ul class="hide-nav_contents js-hide-nav_contents-5">
+                <li class="hide-nav_contents_list">
+                    <a href="">募集要項</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">学納金</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">学納金支援制度</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">保護者の皆様へ</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">入学選考料のお支払い</a>
+                </li>
+            </ul>
+            <ul class="hide-nav_contents js-hide-nav_contents-6">
+                <li class="hide-nav_contents_list">
+                    <a href="">就活支援サポート</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">資格取得</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">卒業生の活躍</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="title">
+            <div class="title_top">
+                <div class="title_top_bg">
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/schedule/bg_schedule01.jpg"
+                        alt="">
+                </div>
+                <h1>
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/schedule/ttl_schedule.svg"
+                        alt="SCHEDULE">
+                </h1>
+            </div>
+            <div class="title_bottom">
+                <h2>年間スケジュール</h2>
+            </div>
+        </div>
+        <div class="seriously">
+            <h3 class="seriously_title">本気で学び、本気で楽しむ！</h3>
+            <p class="seriously_text">
+                シセビでは、一流アーティストを招いたイベント、美意識や感性を磨くための芸術鑑賞、<br>
+                仲間との交流を深める体育祭や学園祭など、行事がもりだくさんです！<br>
+                同じ目的を持った素敵な仲間とともに、本気で学び、そして本気で楽しむこと。<br>
+                充実した2年間のキャンパスライフは、きっと一生の思い出になりますよ。
+            </p>
+        </div>
+        <div class="event">
+            <div class="logo">
+                <h2>
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/schedule/ttl_pickupevent.svg"
+                        alt="ピックアップイベント">
+                </h2>
+                <p>ピックアップイベント</p>
+            </div>
+            <ul class="bigevent">
+                <li>
+                    <div class="photo">
+                        <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/schedule/pic_event01.png"
+                            alt="">
+                    </div>
+                    <div class="explanation">
+                        <p class="title">
+                            学園祭「花椿祭」<span>（1・2年）</span>
+                        </p>
+                        <p class="text">
+                            シセビ最大のイベントである学園祭「花椿祭」では、模擬店や模擬サロンでシセビ生がお客様をおもてなしします。またシセビ生が企画・演出をすべて手掛けるヘアメイクアップショーや、楽しいパフォーマンスもご覧いただけますよ。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                        <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/schedule/pic_event02.png"
+                            alt="">
+                    </div>
+                    <div class="explanation">
+                        <p class="title">
+                            学園生活の集大成、技術発表会<span>（2年）</span>
+                        </p>
+                        <p class="text">
+                            「技術発表会」は、学生だけで作り上げる2年間の集大成です。オープンキャンパスではお伝えしきれない、入学してからの2年間でどれほどの技術が身につくかを実際にご覧いただけます。美容業界を目指す高校生は必見のイベントです。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                        <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/schedule/pic_event03.png"
+                            alt="">
+                    </div>
+                    <div class="explanation">
+                        <p class="title">
+                            海外研修<span>（1・2年）</span>
+                        </p>
+                        <p class="text">
+                            シセビでは毎年、海外研修を実施しています。訪れる国の歴史と文化に触れ、本物の美を体感するとともに、グローバル社会における自分の存在を再確認することができます。世界トップクラスの技術も学べる、絶好のチャンスです。
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="schdule">
+                <div class="schdule_top">
+                    <div class="grade">1年生</div>
+                    <div class="month"></div>
+                    <div class="grade">2年生</div>
+                </div>
+                <div class="schdule_event">
+                    <ul class="grade">
+                        <li>●入学式</li>
+                        <li>●入学オリエンテーション</li>
+                        <li>●学生交流会</li>
+                        <li>●校長講話</li>
+                        <li>●健康診断</li>
+                    </ul>
+                    <div class="month">4月</div>
+                    <ul class="grade">
+                        <li>●前期始業式</li>
+                        <li>
+                            ●トップクリエイター<br>
+                            &emsp;セミナー
+                        </li>
+                        <li>●学生交流会</li>
+                        <li>
+                            ●資生堂美容室<br>
+                            &emsp;企業研究会
+                        </li>
+                    </ul>
+                </div>
+                <div class="schdule_event">
+                    <ul class="grade">
+                        <li>
+                            ●トップクリエイター<br>
+                            &emsp;セミナー
+                        </li>
+                        <li>●体育祭</li>
+                    </ul>
+                    <div class="month">5月</div>
+                    <ul class="grade">
+                        <li>
+                            ●トップクリエイター<br>
+                            &emsp;セミナー
+                        </li>
+                        <li>●体育祭</li>
+                        <li>●健康診断</li>
+                        <li>●就職ガイダンス</li>
+                    </ul>
+                </div>
+                <div class="schdule_event">
+                    <ul class="grade">
+                        <li>●校長講話</li>
+                    </ul>
+                    <div class="month">6月</div>
+                    <ul class="grade">
+                        <li>●前期実技試験</li>
+                        <li>●校長講話</li>
+                    </ul>
+                </div>
+                <div class="schdule_event">
+                    <ul class="grade">
+                        <li>●ヘアショー見学</li>
+                        <li>
+                            ●資生堂グローバル<br>
+                            &emsp;イノベーション<br>
+                            &emsp;センター見学（BC科）
+                        </li>
+                        <li>●前期実技試験</li>
+                    </ul>
+                    <div class="month">7月</div>
+                    <ul class="grade">
+                        <li>●実務実習（美容師科）</li>
+                    </ul>
+                </div>
+                <div class="schdule_event">
+                    <ul class="grade">
+                        <li>●夏期休暇</li>
+                    </ul>
+                    <div class="month">8月</div>
+                    <ul class="grade">
+                        <li>●夏期休暇</li>
+                    </ul>
+                </div>
+                <div class="schdule_event">
+                    <ul class="grade">
+                        <li>●前期学科試験</li>
+                        <li>●花椿祭</li>
+                        <li>●前期終業式</li>
+                    </ul>
+                    <div class="month">9月</div>
+                    <ul class="grade">
+                        <li>●前期学科試験</li>
+                        <li>●花椿祭</li>
+                        <li>●前期終業式</li>
+                        <li>●劇団四季鑑賞</li>
+                    </ul>
+                </div>
+                <div class="schdule_event">
+                    <ul class="grade">
+                        <li>●後期始業式</li>
+                        <li>
+                            ●トップクリエイター<br>
+                            &emsp;セミナー
+                        </li>
+                        <li>●宝塚歌劇鑑賞</li>
+                        <li>●国内研修</li>
+                    </ul>
+                    <div class="month">10月</div>
+                    <ul class="grade">
+                        <li>●後期始業式</li>
+                        <li>
+                            ●トップクリエイター<br>
+                            &emsp;セミナー
+                        </li>
+                    </ul>
+                </div>
+                <div class="schdule_event">
+                    <ul class="grade">
+                        <li>●校長講話</li>
+                        <li>
+                            ●テクニカル<br>
+                            &emsp;デザインコンテスト
+                        </li>
+                    </ul>
+                    <div class="month">11月</div>
+                    <ul class="grade">
+                        <li>●技術発表会</li>
+                        <li>●校長講話</li>
+                    </ul>
+                </div>
+                <div class="schdule_event">
+                    <ul class="grade">
+                        <li>●海外研修</li>
+                        <li>●冬期休暇</li>
+                    </ul>
+                    <div class="month">12月</div>
+                    <ul class="grade">
+                        <li>●海外研修</li>
+                        <li>●冬期休暇</li>
+                    </ul>
+                </div>
+                <div class="schdule_event">
+                    <ul class="grade">
+                        <li>●年賀式</li>
+                        <li>
+                            ●NARS・ローラメルシエ<br>
+                            &emsp;企業研究会
+                        </li>
+                        <li>
+                            ●クレ・ド・ポー ボーテ<br>
+                            &emsp;サロン企業研究会
+                        </li>
+                        <li>
+                            ●ベアエッセンシャル<br>
+                            &emsp;企業研究会
+                        </li>
+                        <li>●IPSA企業研究会</li>
+                    </ul>
+                    <div class="month">1月</div>
+                    <ul class="grade">
+                        <li>●年賀式</li>
+                        <li>●後期実技試験</li>
+                    </ul>
+                </div>
+                <div class="schdule_event">
+                    <ul class="grade">
+                        <li>●ネイル研修</li>
+                        <li>●後期実技試験</li>
+                        <li>●後期学科試験</li>
+                        <li>●校長講話</li>
+                        <li>
+                            ●トップクリエイター<br>
+                            &emsp;セミナー
+                        </li>
+                        <li>
+                            ●資生堂ジャパン<br>
+                            &emsp;企業研究会
+                        </li>
+                    </ul>
+                    <div class="month">2月</div>
+                    <ul class="grade">
+                        <li>
+                            ●美容師国家試験<br>
+                            &emsp;（実技）
+                        </li>
+                        <li>
+                            ●ビューティー<br>
+                            &emsp;コンサルタント科<br>
+                            &emsp;修了試験
+                        </li>
+                        <li>●後期学科試験</li>
+                        <li>●校長講話</li>
+                    </ul>
+                </div>
+                <div class="schdule_event">
+                    <ul class="grade">
+                        <li>●スチューデントカップ</li>
+                        <li>●後期終業式</li>
+                        <li>●実務実習</li>
+                        <li>●春期休暇</li>
+                    </ul>
+                    <div class="month">1月</div>
+                    <ul class="grade">
+                        <li>
+                            ●美容師国家試験<br>
+                            &emsp;（筆記）
+                        </li>
+                        <li>●スチューデントカップ</li>
+                        <li>●卒業式・称号授与式</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="graduate-btn">
+                <a class="graduate-btn_link" href="">
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/admission/img_admission_bnr01.jpg"
+                        alt="">
+                    <span class="move-arrow arrow">
+                        <img src="../common/img/top_arrow_three2.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <ul class="black-btn-list">
+                <li>
+                    <a class="black-btn list_btn" href="../open-campus/index.html">
+                        <span class="btn-img list_img">
+                            <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/img_bnr01.png"
+                                alt="">
+                        </span>
+                        <span class="move-arrow list_arrow">
+                            <img src="../common/img/top_arrow_three2.png" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="black-btn list_btn"
+                        href="https://telemail.jp/_pcsite/?des=011470&gsn=0114700&tag=0014700001&cmt=sba1">
+                        <span class="btn-img list_img">
+                            <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/admission/img_admission_bnr02.jpg"
+                                alt="">
+                        </span>
+                        <span class="move-arrow list_arrow">
+                            <img src="../common/img/top_arrow_three2.png" alt="">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <p class="bottom-message">
+                その他にも、シセビには楽しくて刺激的なイベントがもりだくさんです。<br>
+                シセビ生のリアルな学園生活はブログでもご紹介していますので、是非チェックしてみてくださいね。
+            </p>
+            <div id="event_bgtriangle" class="bgtriangle">
+                <span class="bgtriangle_line"></span>
+                <span class="bgtriangle_line"></span>
+                <span class="bgtriangle_line"></span>
+            </div>
+        </div>
+        <div class="recommend">
+            <h3>
+                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/magazine/ttl_recommend.svg"
+                    alt="RECOMMEND">
+            </h3>
+            <ul class="recommend_list">
+                <li class="item">
+                    <a class="black-btn btn" href="">
+                        <p class="date">2020/04/05SUN</p>
+                        <div class="human">
+                            <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/04/voyzboy_t.jpg"
+                                alt="">
+                        </div>
+                        <p class="item-text">シセビにVOYZ BOYが来校！</p>
+                        <span class="move-arrow arrow">
+                            <img src="../common/img/black-arrow.svg" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="black-btn btn" href="">
+                        <p class="date">2020/04/02THU</p>
+                        <div class="human">
+                            <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/04/2021_t.jpg"
+                                alt="">
+                        </div>
+                        <p class="item-text">
+                            2021年度版パンフレットの表紙<br>
+                            撮影メイキング動画を公開し…
+                        </p>
+                        <span class="move-arrow arrow">
+                            <img src="../common/img/black-arrow.svg" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="black-btn btn" href="">
+                        <p class="date">2020/01/06MON</p>
+                        <div class="human">
+                            <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/01/002.jpg" alt="">
+                        </div>
+                        <p class="item-text">
+                            30期卒業生の伊東宏泰氏が、テ<br>
+                            レビ出演されます。
+                        </p>
+                        <span class="move-arrow arrow">
+                            <img src="../common/img/black-arrow.svg" alt="">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="recommend_more">
+                <a class="black-btn more-btn" href="">
+                    <p class="more-text">
+                        <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/common/txt_more02.svg"
+                            alt="MORE">
+                    </p>
+                    <span class="move-arrow more-arrow">
+                        <img src="../common/img/black-arrow.svg" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot_top">
+            <a class="move-top" href="">
+                <!-- <img src="common/img/footer_triangle.png" alt=""> -->
+            </a>
+        </div>
+        <div class="foot_contact">
+            <div class="foot_contact_contents">
+                <div class="foot_contact_left">
+                    <p class="foot_contact_left_logo">
+                        <img src="../common/img/footer_logo.png" alt="資生堂美容技術専門学校">
+                    </p>
+                    <div class="foot_contact_left_sns">
+                        <a
+                            href="https://twitter.com/shiseidoacademy?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a
+                            href="https://www.facebook.com/%E5%AD%A6%E6%A0%A1%E6%B3%95%E4%BA%BA%E8%B3%87%E7%94%9F%E5%A0%82%E5%AD%A6%E5%9C%92-%E8%B3%87%E7%94%9F%E5%A0%82%E7%BE%8E%E5%AE%B9%E6%8A%80%E8%A1%93%E5%B0%82%E9%96%80%E5%AD%A6%E6%A0%A1-1381357442158429/">
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shisebi/?hl=ja">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="http://line.naver.jp/ti/p/%40shisebi">
+                            <i class="fab fa-line fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="foot_contact_right">
+                    <div class="foot_contact_right_tel">
+                        <p class="tel">
+                            <img src="../common/img/footer_tel.png" alt="TEL">
+                        </p>
+                        <p class="number">
+                            <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/common/txt_telnumber.svg"
+                                alt="03-3962-2561">
+                        </p>
+                    </div>
+                    <p class="foot_contact_right_hour">受付時間&nbsp;9:00～17:00&nbsp;(日・祝祭日、休校日を除く)</p>
+                    <div class="foot_contact_right_btn">
+                        <div class="contact-btn">
+                            <a href="">お問い合わせ</a>
+                        </div>
+                        <div class="contact-btn">
+                            <a href="">企業の採用担当者様はこちら</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot_nav">
+            <nav>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">学校について</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">
+                            <a href="">- 学校概要</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- シセビだからできること</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 施設・設備</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 学校の周辺環境</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">学科・コース</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">美容師科</li>
+                        <li class="nav_contents_list">
+                            <a href="">　- ヘアスタイリストコース</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">　- ビューティースペシャリストコース</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- ビューティーコンサルタント科</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 美容師通信科</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">キャンパスライフ</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">
+                            <a href="">- 年間スケジュール</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- オープンキャンパス</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">シセビマガジン</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">
+                            <a href="">- 学園生活</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- イベントレポート</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- コンテスト実績</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 卒業生メッセージ</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 美容お役立ち情報</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">入学案内</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">
+                            <a href="">- 募集要項</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 学納金</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 学納金支援制度</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 保護者の皆様へ</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 入学選考料のお支払い</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">進路・就活支援</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">
+                            <a href="">- 就活支援サポート</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 資格取得</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 卒業生の活躍</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">その他</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">
+                            <a href="">- お知らせ</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 情報公開</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 資料請求</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- よくある質問</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- お問い合わせ</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- アクセス</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- プライバシーポリシー</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <p class="foot_copy">&copy;SHISEIDO BEAUTY ACADEMY</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="common/js/slick.js"></script>
+    <script src="common/js/script.js"></script>
+    <title>資生堂美容技術専門学校</title>
+    <link rel="stylesheet" href="common/css/reset.css">
+    <link rel="stylesheet" href="common/css/template.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_bkcolor">
+            <div class="head">
+                <div class="head_logo">
+                    <a href="index.html"></a>
+                </div>
+                <nav class="head_nav">
+                    <div class="head_nav_top">
+                        <div class="head_nav_top_item">
+                            <a href="parents/index.html">保護者の方へ</a>
+                        </div>
+                        <div class="head_nav_top_item">
+                            <a href="open-campus/index.html">オープンキャンパス</a>
+                        </div>
+                        <div class="head_nav_top_item">
+                            <a href="">資料請求</a>
+                        </div>
+                        <div class="head_nav_top_item">
+                            <a href="contact/index.html">企業の方へ</a>
+                        </div>
+                        <div class="head_nav_top_item">
+                            <a href="admission/index.html">入学選考料のお支払い</a>
+                        </div>
+                    </div>
+                    <ul class="head_nav_bottom">
+                        <li class="head_nav_bottom_list js-nav_bottom_list" date-list="1">
+                            <a href="summary/index.html">学校について</a>
+                        </li>
+                        <li class="head_nav_bottom_list js-nav_bottom_list" date-list="2">
+                            <a href="">学科・コース</a>
+                        </li>
+                        <li class="head_nav_bottom_list js-nav_bottom_list" date-list="3">
+                            <a href="schedule/index.html">キャンパスライフ</a>
+                        </li>
+                        <li class="head_nav_bottom_list js-nav_bottom_list" date-list="4">
+                            <a href="magazine/index.html">シセビマガジン</a>
+                        </li>
+                        <li class="head_nav_bottom_list js-nav_bottom_list" date-list="5">
+                            <a href="offering/index.html">入学案内</a>
+                        </li>
+                        <li class="head_nav_bottom_list js-nav_bottom_list" date-list="6">
+                            <a href="employment/index.html">進路・就活支援</a>
+                        </li>
+                        <li class="head_nav_bottom_list">
+                            <a href="question/index.html">よくある質問</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="hide-nav">
+            <ul class="hide-nav_contents js-hide-nav_contents-1">
+                <li class="hide-nav_contents_list">
+                    <a href="">学校概要</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">シセビだからできること</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">施設・設備</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">学校の周辺環境</a>
+                </li>
+            </ul>
+            <ul class="hide-nav_contents js-hide-nav_contents-2">
+                <li class="hide-nav_contents_list">
+                    <a href="">美容師科ヘアスタイリストコース</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">美容師科ビューティースペシャリストコース</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">ビューティーコンサルタント科</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">美容師通信科</a>
+                </li>
+            </ul>
+            <ul class="hide-nav_contents js-hide-nav_contents-3">
+                <li class="hide-nav_contents_list">
+                    <a href="">年間スケジュール</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">オープンキャンパス</a>
+                </li>
+            </ul>
+            <ul class="hide-nav_contents js-hide-nav_contents-4">
+                <li class="hide-nav_contents_list">
+                    <a href="">学生生活</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">イベントレポート</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">コンテスト実績</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">卒業生メッセージ</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">美容お役立ち情報</a>
+                </li>
+            </ul>
+            <ul class="hide-nav_contents js-hide-nav_contents-5">
+                <li class="hide-nav_contents_list">
+                    <a href="">募集要項</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">学納金</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">学納金支援制度</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">保護者の皆様へ</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">入学選考料のお支払い</a>
+                </li>
+            </ul>
+            <ul class="hide-nav_contents js-hide-nav_contents-6">
+                <li class="hide-nav_contents_list">
+                    <a href="">就活支援サポート</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">資格取得</a>
+                </li>
+                <li class="hide-nav_contents_list">
+                    <a href="">卒業生の活躍</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="top_hero">
+            <div class="js-top-slick slide-show" dir="rtl">
+                <div>
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/04/pic_kvcampus.jpg" alt="">
+                </div>
+                <div>
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/04/pic_kv01-scaled.jpg" alt="">
+                </div>
+                <div>
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/04/pic_kv02-scaled.jpg" alt="">
+                </div>
+            </div>
+            <div class="bgtriangle">
+                <span class="bgtriangle_line"></span>
+                <span class="bgtriangle_line"></span>
+            </div>
+        </div>
+        <div class="information">
+            <ul class="information_btn">
+                <li class="information_btn_list">
+                    <a class="black-btn list_btn" href="">
+                        <span class="btn-img list_img">
+                            <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/05/pic_webbriefing0707.jpg"
+                                alt="">
+                        </span>
+                        <span class="move-arrow list_arrow">
+                            <img src="common/img/top_arrow_three2.png" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li class="information_btn_list">
+                    <a class="black-btn list_btn" href="">
+                        <span class="btn-img list_img">
+                            <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/04/pic_ao202006.png"
+                                alt="">
+                        </span>
+                        <span class="move-arrow list_arrow">
+                            <img src="common/img/top_arrow_three2.png" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li class="information_btn_list">
+                    <a class="black-btn list_btn" href="">
+                        <span class="btn-img list_img">
+                            <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/04/question.jpg"
+                                alt="">
+                        </span>
+                        <span class="move-arrow list_arrow">
+                            <img src="common/img/top_arrow_three2.png" alt="">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="information_logo">
+                <h2>
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/ttl_information.svg"
+                        alt="お知らせ">
+                </h2>
+                <p>お知らせ</p>
+            </div>
+            <div class="information_woman">
+                <span class="woman">
+                    <img src="common/img/top_image_human.png" alt="">
+                </span>
+                <div id="information_bgtriangle-2" class="bgtriangle">
+                    <span class="bgtriangle_line"></span>
+                    <span class="bgtriangle_line"></span>
+                    <span class="bgtriangle_line"></span>
+                </div>
+            </div>
+            <div class="information_news">
+                <ul class="news_list">
+                    <li>
+                        <a href="">＜在校生（61期生、62期生）並びに保護者の皆さま＞７月以降の授業推進方法について　＞</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="">＜在校生（61期生、62期生）並びに保護者の皆さま＞6月中の授業推進方法について(6月9日)　＞</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="">＜受験生の皆様へ＞ オープンキャンパス内容変更および日程追加のご案内　＞</a>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+            <div id="information_bgtriangle-1" class="bgtriangle">
+                <span class="bgtriangle_line"></span>
+                <span class="bgtriangle_line"></span>
+                <span class="bgtriangle_line"></span>
+            </div>
+        </div>
+        <div class="course">
+            <div class="course_logo">
+                <h2>
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/ttl_course.svg"
+                        alt="コース選択">
+                </h2>
+                <p>コース選択</p>
+            </div>
+            <div class="course_contents">
+                <p class="course_contents_text">目指す職業にあわせた、実践的で充実したカリキュラム</p>
+                <ul class="course_contents_list">
+                    <li class="item">
+                        <a class="black-btn btn" href="">
+                            <div class="title">
+                                <p class="department">美容師科</p>
+                                <p class="course">ヘアスタイリストコース</p>
+                            </div>
+                            <p class="english">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/ttl_harestylist.svg"
+                                    alt="HAIR STYLE">
+                            </p>
+                            <span class="btn-img hero">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/pic_course01.jpg"
+                                    alt="">
+                            </span>
+                            <p class="description">
+                                ヘアスタイリストデビューをめざし「ヘア」に<br>
+                                ターゲットを絞ったスペシャルカリキュラム
+                            </p>
+                            <span class="move-arrow arrow">
+                                <img src="common/img/top_arrow_three2.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="black-btn btn" href="">
+                            <div class="title">
+                                <p class="department">美容師科</p>
+                                <p class="course">ニューティースペシャリストコース</p>
+                            </div>
+                            <p class="english">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/ttl_beautyspecialist.svg"
+                                    alt="BEAUTY SPECIALIST">
+                            </p>
+                            <span class="btn-img hero">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/pic_course02.jpg"
+                                    alt="">
+                            </span>
+                            <p class="description">
+                                美容に関する知識や技術をトータルに学び<br>
+                                多様性に満ちた美のプロフェッショナルに！
+                            </p>
+                            <span class="move-arrow arrow">
+                                <img src="common/img/top_arrow_three2.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="black-btn btn" href="">
+                            <div class="title">
+                                <p class="course">ビューティーコンサルタント科</p>
+                            </div>
+                            <p class="english">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/ttl_beautyconsultant.svg"
+                                    alt="BEAUTY CONSULTANT">
+                            </p>
+                            <span class="btn-img hero">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/pic_course03.jpg"
+                                    alt="">
+                            </span>
+                            <p class="description">
+                                プロフェッショナルとして活躍した教師によるクラスで<br>
+                                ビューティーコンサルタントやエステティシャンをめざす
+                            </p>
+                            <span class="move-arrow arrow">
+                                <img src="common/img/top_arrow_three2.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="black-btn btn" href="">
+                            <div class="title">
+                                <p class="course">美容師通信科</p>
+                            </div>
+                            <p class="english">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/ttl_licenseacquisition.svg"
+                                    alt="LICENSE ACQUISITION">
+                            </p>
+                            <span class="btn-img hero">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/pic_course04.jpg"
+                                    alt="">
+                            </span>
+                            <p class="description">
+                                通信科で目指す、美容師への道<br>
+                                資格を取得し転職やキャリアアップをめざす
+                            </p>
+                            <span class="move-arrow arrow">
+                                <img src="common/img/top_arrow_three2.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="features">
+            <div class="features_woman">
+                <span class="woman">
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/04/pic_bgimg01_02.jpg"
+                        alt="">
+                </span>
+                <div id="features_bgtriangle-1" class="bgtriangle">
+                    <span class="bgtriangle_line"></span>
+                    <span class="bgtriangle_line"></span>
+                    <span class="bgtriangle_line"></span>
+                </div>
+            </div>
+            <div class="information_logo">
+                <h2>
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/ttl_features.svg"
+                        alt="シセビの特徴">
+                </h2>
+                <p>シセビの特徴</p>
+            </div>
+            <div class="features_step">
+                <p class="features_step_text">シセビのことが良くわかる3ステップ</p>
+                <ul class="features_step_list">
+                    <li class="item">
+                        <a class="black-btn btn" href="">
+                            <div class="human">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/pic_feature01.png"
+                                    alt="">
+                            </div>
+                            <div class="step-content">
+                                <figure class="content_number">
+                                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/common/txt_no01.svg"
+                                        alt="01">
+                                </figure>
+                                <p class="content_text">
+                                    シセビだから<br>
+                                    できること
+                                </p>
+                            </div>
+                            <span class="move-arrow arrow">
+                                <img src="common/img/top_arrow_three2.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="black-btn btn" href="">
+                            <div class="human">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/pic_feature02.png"
+                                    alt="">
+                            </div>
+                            <div class="step-content">
+                                <figure class="content_number">
+                                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/common/txt_no02.svg"
+                                        alt="02">
+                                </figure>
+                                <p class="content_text">
+                                    充実のキャンパスライフ
+                                </p>
+                            </div>
+                            <span class="move-arrow arrow">
+                                <img src="common/img/top_arrow_three2.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="black-btn btn" href="">
+                            <div class="human">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/pic_feature03.png"
+                                    alt="">
+                            </div>
+                            <div class="step-content">
+                                <figure class="content_number">
+                                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/common/txt_no03.svg"
+                                        alt="03">
+                                </figure>
+                                <p class="content_text">
+                                    世界で活躍する卒業生
+                                </p>
+                            </div>
+                            <span class="move-arrow arrow">
+                                <img src="common/img/top_arrow_three2.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="features_bgtriangle-2" class="bgtriangle">
+                <span class="bgtriangle_line"></span>
+                <span class="bgtriangle_line"></span>
+                <span class="bgtriangle_line"></span>
+            </div>
+        </div>
+        <div class="magazine">
+            <div class="magazine_bg"></div>
+            <div class="magazine_contents">
+                <h2 class="magazine_contents_title">
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/img_magazine01.png"
+                        alt="シセビマガジン">
+                </h2>
+                <ul class="magazine_contents_list">
+                    <li class="item">
+                        <a class="black-btn btn" href="">
+                            <p class="date">2020/04/05SUN</p>
+                            <div class="human">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/04/voyzboy_t.jpg"
+                                    alt="">
+                            </div>
+                            <p class="item-text">シセビにVOYZ BOYが来校！</p>
+                            <span class="move-arrow arrow">
+                                <img src="common/img/top_arrow_three2.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="black-btn btn" href="">
+                            <p class="date">2020/04/02THU</p>
+                            <div class="human">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/04/2021_t.jpg"
+                                    alt="">
+                            </div>
+                            <p class="item-text">
+                                2021年度版パンフレットの表紙<br>
+                                撮影メイキング動画を公開し…
+                            </p>
+                            <span class="move-arrow arrow">
+                                <img src="common/img/top_arrow_three2.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="black-btn btn" href="">
+                            <p class="date">2020/01/06MON</p>
+                            <div class="human">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/01/002.jpg"
+                                    alt="">
+                            </div>
+                            <p class="item-text">
+                                30期卒業生の伊東宏泰氏が、テ<br>
+                                レビ出演されます。
+                            </p>
+                            <span class="move-arrow arrow">
+                                <img src="common/img/top_arrow_three2.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="magazine_contents_more">
+                    <a class="black-btn more-btn" href="">
+                        <p class="more-text">
+                            <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/common/txt_more.svg"
+                                alt="MORE">
+                        </p>
+                        <span class="move-arrow more-arrow">
+                            <img src="common/img/top_arrow_three2.png" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="news_logo">
+                <h2>
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/ttl_newssns.svg"
+                        alt="NEWS＆SNS">
+                </h2>
+                <p>ニュース　インスタ　ツイッター</p>
+            </div>
+            <div class="news_contents">
+                <div class="news_contents_block contents_news">
+                    <p class="title">
+                        <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/ttl_news.svg"
+                            alt="NEWS">
+                    </p>
+                    <div class="contents">
+                        <ul class="contents_list">
+                            <li class="item">
+                                <a class="black-btn btn" href="">
+                                    <p class="date">2020/06/26FRI</p>
+                                    <div class="article">
+                                        <p>＜在校生（61期生、62期生）並びに保護者の皆さま＞７月以降の…</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="black-btn btn" href="">
+                                    <p class="date">2020/06/09TUE</p>
+                                    <div class="article">
+                                        <p>＜在校生（61期生、62期生）並びに保護者の皆さま＞６月中の授…</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="black-btn btn" href="">
+                                    <p class="date">2020/06/03WED</p>
+                                    <div class="article">
+                                        <p>＜受験生の皆様へ＞オープンキャンパス内容変更および日程追加…</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a class="black-btn more-btn" href="">
+                            <p class="more-text">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/common/txt_more.svg"
+                                    alt="MORE">
+                            </p>
+                            <span class="move-arrow more-arrow">
+                                <img src="common/img/top_arrow_three2.png" alt="">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="news_contents_block contents_instagram">
+                    <p class="title">
+                        <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/ttl_instagram.svg"
+                            alt="INSTAGRAM">
+                    </p>
+                    <div class="contents">
+
+                    </div>
+                    <div class="more">
+                        <a class="black-btn more-btn" href="">
+                            <p class="more-text">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/common/txt_more.svg"
+                                    alt="MORE">
+                            </p>
+                            <span class="move-arrow more-arrow">
+                                <img src="common/img/top_arrow_three2.png" alt="">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="news_contents_block contents_twitter">
+                    <p class="title">
+                        <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/index/ttl_twitter.svg"
+                            alt="TWITTER">
+                    </p>
+                    <div class="contents">
+                        <a class="twitter-timeline"
+                            href="https://twitter.com/shiseidoacademy?ref_src=twsrc%5Etfw">Tweets by shiseidoacademy</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="more">
+                        <a class="black-btn more-btn" href="">
+                            <p class="more-text">
+                                <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/common/txt_more.svg"
+                                    alt="MORE">
+                            </p>
+                            <span class="move-arrow more-arrow">
+                                <img src="common/img/top_arrow_three2.png" alt="">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="news_woman">
+                <span class="woman">
+                    <img src="https://academy.shiseido.co.jp/b4091c/wp-content/uploads/2020/04/pic_bgimg03_02.jpg"
+                        alt="">
+                </span>
+                <div id="news_bgtriangle-1" class="bgtriangle">
+                    <span class="bgtriangle_line"></span>
+                    <span class="bgtriangle_line"></span>
+                    <span class="bgtriangle_line"></span>
+                    <span class="bgtriangle_line"></span>
+                    <span class="bgtriangle_line"></span>
+                </div>
+            </div>
+            <div id="news_bgtriangle-2" class="bgtriangle">
+                <span class="bgtriangle_line"></span>
+                <span class="bgtriangle_line"></span>
+                <span class="bgtriangle_line"></span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot_top">
+            <a class="move-top" href="">
+                <!-- <img src="common/img/footer_triangle.png" alt=""> -->
+            </a>
+        </div>
+        <div class="foot_contact">
+            <div class="foot_contact_contents">
+                <div class="foot_contact_left">
+                    <p class="foot_contact_left_logo">
+                        <img src="common/img/footer_logo.png" alt="資生堂美容技術専門学校">
+                    </p>
+                    <div class="foot_contact_left_sns">
+                        <a
+                            href="https://twitter.com/shiseidoacademy?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a
+                            href="https://www.facebook.com/%E5%AD%A6%E6%A0%A1%E6%B3%95%E4%BA%BA%E8%B3%87%E7%94%9F%E5%A0%82%E5%AD%A6%E5%9C%92-%E8%B3%87%E7%94%9F%E5%A0%82%E7%BE%8E%E5%AE%B9%E6%8A%80%E8%A1%93%E5%B0%82%E9%96%80%E5%AD%A6%E6%A0%A1-1381357442158429/">
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shisebi/?hl=ja">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="http://line.naver.jp/ti/p/%40shisebi">
+                            <i class="fab fa-line fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="foot_contact_right">
+                    <div class="foot_contact_right_tel">
+                        <p class="tel">
+                            <img src="common/img/footer_tel.png" alt="TEL">
+                        </p>
+                        <p class="number">
+                            <img src="https://academy.shiseido.co.jp/b4091c/wp-content/themes/shisebi/img/common/txt_telnumber.svg"
+                                alt="03-3962-2561">
+                        </p>
+                    </div>
+                    <p class="foot_contact_right_hour">受付時間&nbsp;9:00～17:00&nbsp;(日・祝祭日、休校日を除く)</p>
+                    <div class="foot_contact_right_btn">
+                        <div class="contact-btn">
+                            <a href="">お問い合わせ</a>
+                        </div>
+                        <div class="contact-btn">
+                            <a href="">企業の採用担当者様はこちら</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot_nav">
+            <nav>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">学校について</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">
+                            <a href="">- 学校概要</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- シセビだからできること</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 施設・設備</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 学校の周辺環境</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">学科・コース</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">美容師科</li>
+                        <li class="nav_contents_list">
+                            <a href="">　- ヘアスタイリストコース</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">　- ビューティースペシャリストコース</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- ビューティーコンサルタント科</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 美容師通信科</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">キャンパスライフ</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">
+                            <a href="">- 年間スケジュール</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- オープンキャンパス</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">シセビマガジン</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">
+                            <a href="">- 学園生活</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- イベントレポート</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- コンテスト実績</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 卒業生メッセージ</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 美容お役立ち情報</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">入学案内</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">
+                            <a href="">- 募集要項</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 学納金</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 学納金支援制度</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 保護者の皆様へ</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 入学選考料のお支払い</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">進路・就活支援</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">
+                            <a href="">- 就活支援サポート</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 資格取得</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 卒業生の活躍</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_nav_contents">
+                    <div class="nav_title">
+                        <a href="">その他</a>
+                        <span></span>
+                    </div>
+                    <ul class="nav_contents">
+                        <li class="nav_contents_list">
+                            <a href="">- お知らせ</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 情報公開</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- 資料請求</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- よくある質問</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- お問い合わせ</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- アクセス</a>
+                        </li>
+                        <li class="nav_contents_list">
+                            <a href="">- プライバシーポリシー</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <p class="foot_copy">&copy;SHISEIDO BEAUTY ACADEMY</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,502 @@
+@charset'utf-8';
+
+body {
+    font-size: 14px;
+    font-family: NotoSansCJKjp,'Noto Sans JP',-apple-system,BlinkMacSystemFont,'Helvetica Neue','Yu Gothic',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN',Arial,'メイリオ',Meiryo,sans-serif;
+    background-color: #bc001c;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+// ヘッダー
+
+header {
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    .header_bkcolor {
+        background-color: #bc001c;
+    }
+    .head {
+        width: 90%;
+        max-width: 1220px;
+        margin: 0 auto;
+        padding-top: 25px;
+        position: relative;
+        display: flex;
+        &_logo {
+            width: 16.8%;
+            max-width: 205px;
+            padding-top: 5%;
+            background-image: url("../img/header_logo.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        &_nav {
+            width: 100%;
+        }
+    }
+    .hide-nav {
+        display: none;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+    }
+}
+
+.head_nav_top {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    &_item {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        padding: 0 20px;
+        background-color: black;
+        border: 2px solid black;
+        transition: background-color .3s;
+        a {
+            position: relative;
+            vertical-align: middle;
+            transition: color .3s;
+        }
+        a::before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            margin: auto;
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -9px;
+            transform: rotate(-135deg);
+        }
+        a::after {
+            content: '';
+            width: 5px;
+            height: 5px;
+            margin: auto;
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -15px;
+            transform: rotate(-135deg);
+        }
+    }
+    &_item:hover {
+        background-color: #bc001c;
+        a {
+            color: black;
+        }
+    }
+    &_item:not(:first-child) {
+        margin-left: 5px;
+    }
+}
+
+.head_nav_bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 796px;
+    margin-left: auto;
+    border-top: 2px solid white;
+    &_list {
+        padding: 15px 0 25px;
+    }
+    a {
+        position: relative;
+        padding-right: 18px;
+        transition: border .3s;
+    }
+    a:hover {
+        border-bottom: 2px solid white;
+    }
+    a::after {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        content: '';
+        background-image: url('../img/header_arrow.png');
+        background-repeat: no-repeat;
+        width: 13px;
+        height: 13px;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+    a:hover::after {
+        opacity: 1;
+    }
+}
+
+.hide-nav_contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &_list {
+        a {
+            width: 100%;
+            padding: 20px;
+            color: white;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: background-color .3s;
+        }
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+}
+
+// メイン
+
+main {
+    position: relative;
+
+    // 黒枠のボタン(矢印あり)
+    .black-btn {
+        width: 100%;
+        height: 100%;
+        display: block;
+        transition: all .3s;
+        background-color: black;
+        position: relative;
+    }
+    .btn-img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    .btn-img::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .3s;
+    }
+    .btn-img::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: all .3s;
+    }
+    .move-arrow {
+        position: absolute;
+        transition: transform .3s;
+    }
+    .move-arrow::before {
+        display: inline-block;
+        content: '';
+        width: 35px;
+        height: 3px;
+        position: absolute;
+        top: 44%;
+        left: -25px;
+        transform: translate(-50%,-50%);
+        background-color: transparent;
+        transition: background-color .3s;
+    }
+    .black-btn:hover {
+        background-color: rgb(63, 63, 63);
+    }
+    .black-btn:hover .btn-img::before {
+        border-top-color: rgb(63, 63, 63);
+    }
+    .black-btn:hover .btn-img::after {
+        border-right-color: rgb(63, 63, 63);
+    }
+    .black-btn:hover .move-arrow {
+        transform: translateX(110%);
+    }
+    .black-btn:hover .move-arrow::before {
+        background-color: rgb(223, 223, 223);
+    }
+
+    // 黒枠のボタン(矢印なし)
+    .black-noarrow-btn {
+        position: relative;
+        width: 18.9vw;
+        max-width: 272px;
+        display: inline-block;
+        text-align: center;
+        background-color: #000;
+        padding: 15px 0;
+        font-size: 16px;
+        transition: background-color .3s;
+    }
+    .black-noarrow-btn:hover {
+        background-color: rgb(63, 63, 63);
+    }
+    .black-noarrow-btn::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        margin: auto;
+        border-left: 1.5px solid #fff;
+        border-bottom: 1.5px solid #fff;
+        position: absolute;
+        top: 40%;
+        right: 20px;
+        transform: rotate(-135deg);
+    }
+    .black-noarrow-btn::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        margin: auto;
+        border-left: 1.5px solid #fff;
+        border-bottom: 1.5px solid #fff;
+        position: absolute;
+        top: 40%;
+        right: 30px;
+        transform: rotate(-135deg);
+    }
+
+    // 三角線
+    .bgtriangle {
+        width: 39.2vw;
+        max-width: 565px;
+        //height: 84.4vw;
+        height: 100%;
+        max-height: 1215px;
+        position: relative;
+        overflow: hidden;
+        span {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+        }
+        span::before {
+            content: '';
+            width: 51.4vw;
+            max-width: 743px;
+            height: 1.2vw;
+            max-height: 20px;
+            position: absolute;
+            transform: rotate(-124deg) skew(-34deg,0deg);
+        }
+        span::after {
+            content: '';
+            width: 51.4vw;
+            max-width: 743px;
+            height: 1.2vw;
+            max-height: 20px;
+            position: absolute;
+            transform: rotate(124deg) skew(34deg,0deg);
+        }
+    }
+    // 白三角線
+    .bgtriangle_line::before {
+        background-color: #fff;
+    }
+    .bgtriangle_line::after {
+        background-color: #fff;
+    }
+    // 赤三角線
+    .bgtriangle_line-red::before {
+        background-color: #bc001c;
+    }
+    .bgtriangle_line-red::after {
+        background-color: #bc001c;
+    }
+
+    // 二つの三角線のあるタイトル
+    .two-triangle-title {
+        text-align: center;
+        h2 {
+            display: inline;
+            position: relative;
+            font-size: 34px;
+            font-weight: 700;
+        }
+        h2::before {
+            content: '';
+            background-image: url("../img/two-triangle.svg");
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 7px;
+            left: -50px;
+        }
+        h2::after {
+            content: '';
+            background-image: url("../img/two-triangle.svg");
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 7px;
+            right: -50px;
+            transform: scale(-1, 1);
+        }
+    }
+}
+
+// フッター
+
+.foot_top {
+    text-align: center;
+    height: 82px;
+    .move-top {
+        display: inline-block;
+        width: 284px;
+        height: 93px;
+        background-image: url("../img/footer_triangle.png");
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .move-top:hover {
+        background-image: url("../img/footer_triangle2.png");
+    }
+}
+
+.foot_contact {
+    background-color: #3c3c3c;
+    &_contents {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 1220px;
+        margin: 0 auto;
+        padding: 30px 0 25px;
+    }
+}
+
+.foot_contact_left {
+    &_logo {
+        margin-bottom: 30px;
+    }
+    &_sns {
+        a {
+            margin-right: 20px;
+        }
+    }
+}
+
+.foot_contact_right {
+    &_tel {
+        display: flex;
+        justify-content: flex-end;
+        .tel {
+            margin-top: 8px;
+            margin-right: 10px;
+        }
+    }
+    &_hour {
+        margin-top: 10px;
+        font-size: 16px;
+        color: white;
+        text-align: end;
+    }
+    &_btn {
+        display: flex;
+        margin-top: 20px;
+        .contact-btn {
+            margin-left: 15px;
+            border: 2px solid black;
+        }
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            padding: 14.5px 25px;
+            display: block;
+            background-color: black;
+            transition: all .3s;
+        }
+        a:hover {
+            background-color: #bc001c;
+            color: black;
+        }
+    }
+}
+
+.foot_nav {
+    background-color: black;
+    nav {
+        width: 90%;
+        max-width: 1220px;
+        margin: 0 auto;
+        padding-top: 60px;
+        display: flex;
+        flex-flow: wrap;
+    }
+    &_contents {
+        width: calc(100% / 4 - 38px);
+        max-width: 265px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+    &_contents:nth-child(1), &_contents:nth-child(5) {
+        margin-left: 0;
+    }
+    .nav_title {
+        display: flex;
+        a {
+            font-size: 16px;
+            white-space: nowrap
+        }
+        span {
+            content: '';
+            width: 100%;
+            height: 1px;
+            margin-left: 1rem;
+            margin-top: 5px;
+            background-color: white;
+        }
+    }
+    .nav_contents {
+        margin-top: 20px;
+        &_list {
+            color: white;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.foot_copy {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
